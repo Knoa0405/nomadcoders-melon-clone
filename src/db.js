@@ -5,6 +5,7 @@ mongoose.connect(process.env.DB_URL, {
   useUnifiedTopology: true,
   useFindAndModify: false,
   useCreateIndex: true,
+  dbName: "melon"
 });
 
 const db = mongoose.connection;
